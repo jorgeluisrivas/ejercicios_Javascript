@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <script>
+
+        let num1 = parseInt(prompt("Ingresa un número"));
+        while (isNaN(num1)) {
+            num1 = parseInt(prompt("Ingresa un número"));
+        }
+        let num2 = parseInt(prompt("Ingresa otro número"));
+        while (isNaN(num2)) {
+            num2 = parseInt(prompt("Ingresa un número, por favor"));
+        }
+
+        let num3 = parseInt(prompt("Ingresa otro número"));
+        while (isNaN(num3)) {
+            num3 = parseInt(prompt("Ingresa un número, por favor"));
+        }
+
+
+        if (num1 >= num2 && num1 >= num3) {
+            document.write("El número mas grande que ingresaste es " + num1);
+        } else if (num2 >= num1 && num2 >= num3) {
+            document.write("El número mas grande que ingresaste es " + num2);
+        } else if (num3 >= num1 && num2 <= num3) {
+            document.write("El número mas grande que ingresaste es " + num3);
+        } else {
+            document.write("todos los numeros son iguales");
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
